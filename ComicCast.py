@@ -118,4 +118,7 @@ if __name__=="__main__":
     if len(sys.argv) >= 2:
         work_dir = sys.argv[1]
     application.listen(8888)
-    ioloop.IOLoop.instance().start()
+    try:
+        ioloop.IOLoop.instance().start()
+    except KeyboardInterrupt:
+        print "Exiting..."
