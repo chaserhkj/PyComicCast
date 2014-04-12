@@ -1,4 +1,8 @@
 #!/usr/bin/env python2
+# Copyright (c) 2014 Chaserhkj
+# This software is licensed under the MIT license.
+# See LICENSE for more details.
+
 import tornado.web as web
 import tornado.template as template
 import tornado.ioloop as ioloop
