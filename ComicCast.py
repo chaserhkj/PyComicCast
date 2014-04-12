@@ -32,12 +32,23 @@ image_template = template.Template(
     <head>
         <title>PyComicCast</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            img.content {max-width:100%;}
+            div.content {text-align:center;}
+            div.navi {text-align:center;}
+        </style>
     </head>
     <body>
-    <a href="/{{archive}}/{{image + 1}}"><img src="/{{archive}}/{{image}}/image"/></a>
+    <div class="content">
+        <a href="/{{archive}}/{{image + 1}}"><img class="content" src="/{{archive}}/{{image}}/image"/></a>
+    </div>
     <br />
     <br />
-    <a href="/{{archive}}/{{image - 1}}">Previous</a>  <a href="/">Return</a>  <a href="/{{archive}}/{{image + 1}}">Next</a>
+    <div class="navi">
+        <a href="/{{archive}}/{{image - 1}}">Previous</a> 
+        <a href="/">Return</a> 
+        <a href="/{{archive}}/{{image + 1}}">Next</a>
+    </div>
     </body>
 </html>"""
 )
