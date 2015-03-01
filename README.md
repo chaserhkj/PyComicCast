@@ -16,3 +16,4 @@ Road map
     - This is mostly scheduled for lighter versions that uses lighter
       frameworks.
 - More modern, mobile-responsible web frontend
+- Add more feature-rich cmdline options
