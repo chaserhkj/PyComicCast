@@ -8,3 +8,11 @@ Dependency
 
 - tornado
 - rarfile (For reading of rar archives)
+
+Road map
+=======
+
+- Multiple backend support (cherrypy, flask, etc.)
+    - This is mostly scheduled for lighter versions that uses lighter
+      frameworks.
+- More modern, mobile-responsible web frontend
